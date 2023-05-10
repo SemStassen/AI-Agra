@@ -1,0 +1,131 @@
+.start-screen {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.75);
+    z-index: 999999999;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.start-screen h1 {
+    font-size: clamp(3rem, 5vw, 5rem);
+    font-family: var(--main-font-family)
+}
+
+.start-screen p {
+    font-size: 1.3rem;
+    max-width: 35vw;
+    margin-top: 2rem;
+}
+
+.start-button {
+    margin-top: 2rem;
+    padding: 0.75rem;
+    background-color: var(--color-neon-100);
+    color: var(--color-dark-blue-100);
+}
+
+.loading-screen{
+    position: absolute;
+    bottom: 10%;
+    left: 50%;
+    translate: -50% 0;
+    height: 110px;
+    z-index: 999999999999999999;
+}
+
+.loading-screen h1 {
+    font-size: 3.5rem;
+    width: 400px;
+}
+
+.loading-screen p {
+    min-height: 16px;
+}
+
+.loading-screen button {
+   margin-top: 0;
+   display: block;
+   margin: 0 auto;
+}
+
+.loading-screen button:hover {
+    color: white;
+ }
+
+ .loading-mid {
+    position: absolute;
+    font-size: 2rem;
+    bottom: 25%;
+ }
+
+.center {
+    text-align: center;
+}
+
+.warning-size{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 1);
+    z-index: 999999999999999999999;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.warning-size h2 {
+    font-size: 3rem;
+}
+
+.warning-size p {
+    max-width: 500px;
+    text-align: center;
+    margin-top: 1rem;
+}
+
+.end-screen {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.85);
+    z-index: 9999999999999999999999;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.end-screen h1 {
+    font-size: 3rem;
+    margin-bottom: 2rem;
+}
+
+.end-screen p {
+    font-size: 1rem;
+    margin-top: 1rem;
+    max-width: 600px;
+}
+
+.end-screen .by {
+    font-size: 1.4rem;
+    margin-top: 5rem;
+}
+
+.end-screen .by a {
+    display: block;
+    margin-top: 0.5rem;
+    color: rgb(22, 244, 208);
+}
+
+.end-screen .by a:hover {
+    color: white;
+}
